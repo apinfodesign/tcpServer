@@ -1,0 +1,16 @@
+{
+  "name": "tcpserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tcpserver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node tcpserver.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.2",
+    "net": "file:node_modules/net"
+  }
+}
