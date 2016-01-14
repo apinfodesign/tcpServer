@@ -10,7 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "find-remove": "^0.2.8",
     "fs": "0.0.2",
+    "mocha": "^2.3.4",
     "net": "file:node_modules/net"
   }
 }
