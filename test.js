@@ -6,19 +6,18 @@ var tcpserver = require('./tcpserver.js');
 var client = require('./client.js');
 var findRemoveSync = require('find-remove');
 
-console.log(client, 'clientssss ');
-
+ 
 before(function(){
-	//remove all .txt from ./results/
+	//remove all .txt from ./results/ to clear directory
 	var result = findRemoveSync('./results/', 
 			{extensions: ['.txt']});
 });
 
 describe('TCP Server Tests', function(){
-
 	//start server and client
 	before(function(done) {
 		console.log('tcp server started via mocha');
+		//start server then client as callback of server
 	 	tcpserver(function(){ 
 			console.log('client started via mocha');
 			client( done );
